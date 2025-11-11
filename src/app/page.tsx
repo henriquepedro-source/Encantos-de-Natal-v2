@@ -247,9 +247,9 @@ export default function Home() {
             </div>
 
             <div className="text-center mt-8">
-              <p className="text-background/70 text-lg">De <span className="line-through">R$101,00</span></p>
+              <p className="text-background/70 text-lg">De <span className="line-through">R$101,00</span> por</p>
               <p className="text-6xl font-bold text-primary my-2">R$9,90</p>
-              <p className="text-background/70">Acesso vitalício em um pagamento único</p>
+              <p className="text-background/70">via Pix ou Cartão (à vista)</p>
             </div>
 
             <div className="mt-10">
@@ -306,7 +306,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="w-full border-t border-border py-8">
         <div className="container max-w-6xl mx-auto px-4 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Natal Aconchegante. Todos os direitos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} Encantos de Natal. Todos os direitos reservados.</p>
         </div>
       </footer>
     </div>
