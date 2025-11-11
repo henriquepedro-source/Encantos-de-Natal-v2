@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from 'react';
 import { ShoppingCart, X } from 'lucide-react';
-import { useToast } from '@/hooks/use-toast';
 
 const names = [
   'Maria', 'Ana', 'Francisca', 'Antônia', 'Adriana', 'Juliana', 'Marcia', 'Fernanda',
@@ -14,35 +13,37 @@ const names = [
 const getRandomName = () => names[Math.floor(Math.random() * names.length)];
 
 export function SocialProof() {
-  const { toast } = useToast();
   const [isVisible, setIsVisible] = useState(false);
   const [currentName, setCurrentName] = useState('');
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
+    setIsMounted(true);
     setCurrentName(getRandomName());
-  }, []);
 
-  useEffect(() => {
-    const showInterval = setInterval(() => {
-      setCurrentName(getRandomName());
-      setIsVisible(true);
-    }, 15000); // Show toast every 15 seconds
-
-    const hideTimeout = setInterval(() => {
-        setIsVisible(false);
-    }, 10000); // Hide toast after 5 seconds
-
-    // Initial toast
-    setTimeout(() => {
+    const initialShow = setTimeout(() => {
       setIsVisible(true);
     }, 5000);
 
+    const showInterval = setInterval(() => {
+      setCurrentName(getRandomName());
+      setIsVisible(true);
+      
+      setTimeout(() => {
+        setIsVisible(false);
+      }, 5000); // Hide after 5 seconds
+
+    }, 15000); // Show every 15 seconds
 
     return () => {
+      clearTimeout(initialShow);
       clearInterval(showInterval);
-      clearInterval(hideTimeout);
     };
   }, []);
+
+  if (!isMounted) {
+    return null;
+  }
 
   return (
     <div
