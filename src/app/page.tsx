@@ -248,7 +248,7 @@ export default function Home() {
             <div className="text-center mt-8">
               <p className="text-gray-400 text-lg">De <span className="line-through">R$101,00</span></p>
               <p className="text-6xl font-bold text-green-400 my-2">R$9,90</p>
-              <p className="text-gray-400">À vista ou em até 12x no cartão</p>
+              <p className="text-gray-400">À vista no cartão ou Pix</p>
             </div>
 
             <div className="mt-10">
