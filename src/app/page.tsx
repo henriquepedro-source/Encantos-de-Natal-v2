@@ -63,19 +63,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {heroImage && (
-          <div className="mt-12 md:mt-20 px-4 animate-in fade-in zoom-in-95 duration-1000 delay-400">
-            <Image
-              src={heroImage.imageUrl}
-              alt={heroImage.description}
-              width={800}
-              height={600}
-              className="rounded-lg shadow-2xl mx-auto"
-              data-ai-hint={heroImage.imageHint}
-              priority
-            />
-          </div>
-        )}
       </section>
 
       {/* Connection Section */}
