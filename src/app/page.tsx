@@ -116,10 +116,10 @@ export default function Home() {
       {/* Product Showcase */}
       <section id="product" className="w-full py-16 md:py-24">
         <div className="container max-w-6xl mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="animate-in fade-in slide-in-from-left-8 duration-1000">
+          <div className="grid md:grid-cols-1 gap-12 items-center">
+            <div className="animate-in fade-in slide-in-from-left-8 duration-1000 text-center">
               <h2 className="font-headline text-4xl md:text-5xl font-bold">Encantos de Natal — 100 ideias pra um Natal inesquecível</h2>
-              <ul className="mt-8 space-y-4 text-lg">
+              <ul className="mt-8 space-y-4 text-lg max-w-md mx-auto">
                 {[
                   "100 ideias principais + 50 bônus",
                   "Tutoriais simples",
@@ -134,18 +134,6 @@ export default function Home() {
                 ))}
               </ul>
             </div>
-            {showcaseImage && (
-              <div className="flex justify-center animate-in fade-in zoom-in-95 duration-1000">
-                <Image
-                  src={showcaseImage.imageUrl}
-                  alt={showcaseImage.description}
-                  width={400}
-                  height={500}
-                  className="rounded-lg shadow-2xl object-cover"
-                  data-ai-hint={showcaseImage.imageHint}
-                />
-              </div>
-            )}
           </div>
         </div>
       </section>
