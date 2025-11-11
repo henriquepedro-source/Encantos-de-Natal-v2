@@ -1,3 +1,64 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-ebook-mockup",
+      "description": "Mockup do e-book em tablet e celular sobre uma mesa de Natal.",
+      "imageUrl": "https://images.unsplash.com/photo-1652508940093-ae67948f5fa1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxlYm9vayUyMG1vY2t1cHxlbnwwfHx8fDE3NjI4Nzg5OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ebook mockup"
+    },
+    {
+      "id": "connection-cozy-room",
+      "description": "Imagem de um ambiente natalino aconchegante, com luzes quentes e decoração sutil.",
+      "imageUrl": "https://images.unsplash.com/photo-1606589122601-c20330ddbd90?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjb3p5JTIwY2hyaXN0bWFzfGVufDB8fHx8MTc2Mjc5NTg5Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cozy christmas"
+    },
+    {
+      "id": "product-showcase-mockup",
+      "description": "Mockup grande da capa do e-book 'Encantos de Natal'.",
+      "imageUrl": "https://images.unsplash.com/photo-1621944190310-e3cca1564bd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxlYm9vayUyMGNvdmVyfGVufDB8fHx8MTc2Mjc4ODk5M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ebook cover"
+    },
+    {
+      "id": "transformation-sala",
+      "description": "Sala de estar com decoração de Natal iluminada e acolhedora.",
+      "imageUrl": "https://images.unsplash.com/photo-1642335911245-238e13dcabf2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjaHJpc3RtYXMlMjBsaXZpbmdyb29tfGVufDB8fHx8MTc2Mjc5NTg5Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "christmas livingroom"
+    },
+    {
+      "id": "transformation-mesa",
+      "description": "Mesa de jantar posta para o Natal, com detalhes que unem beleza e significado.",
+      "imageUrl": "https://images.unsplash.com/photo-1614854973884-19dc49cb5723?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjaHJpc3RtYXMlMjB0YWJsZXxlbnwwfHx8fDE3NjI3OTU4OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "christmas table"
+    },
+    {
+      "id": "transformation-familia",
+      "description": "Família reunida em um momento de conexão e afeto durante o Natal.",
+      "imageUrl": "https://images.unsplash.com/flagged/photo-1545622783-901effb998a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjaHJpc3RtYXMlMjBmYW1pbHl8ZW58MHx8fHwxNzYyNzkxNzQxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "christmas family"
+    },
+    {
+      "id": "transformation-lar",
+      "description": "Visão geral de um lar com um clima leve e cheio de boas energias natalinas.",
+      "imageUrl": "https://images.unsplash.com/photo-1606050450797-e7597385600c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y2hyaXN0bWFzJTIwaG9tZXxlbnwwfHx8fDE3NjI3OTU4OTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "christmas home"
+    },
+    {
+      "id": "testimonial-1",
+      "description": "Foto de perfil de uma mulher sorrindo.",
+      "imageUrl": "https://images.unsplash.com/photo-1592621385612-4d7129426394?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MjgwMDA3M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "testimonial-2",
+      "description": "Foto de perfil de uma mulher sorrindo.",
+      "imageUrl": "https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b21hbiUyMHNtaWxpbmd8ZW58MHx8fHwxNzYyODY1MTk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman smiling"
+    },
+    {
+      "id": "testimonial-3",
+      "description": "Foto de perfil de um homem sorrindo.",
+      "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjI4NTg1MjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man portrait"
+    }
+  ]
 }
