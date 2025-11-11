@@ -275,7 +275,6 @@ export default function Home() {
             {[
               { q: "Preciso ter experiência com decoração?", a: "Não! As ideias são pensadas para todos, desde iniciantes até quem já tem experiência. Os tutoriais são simples e fáceis de seguir." },
               { q: "Posso aplicar em apartamento pequeno?", a: "Com certeza! Muitas ideias são perfeitas para otimizar espaços pequenos e criar um ambiente aconchegante, não importa o tamanho do seu lar." },
-              { q: "O material vem com imagens de referência?", a: "Sim! O e-book é ricamente ilustrado com fotografias inspiradoras para te ajudar a visualizar e executar cada ideia." },
               { q: "Recebo o e-book imediatamente após o pagamento?", a: "Sim! O acesso é liberado imediatamente após a confirmação do pagamento. Você receberá tudo por e-mail." },
               { q: "Posso ler pelo celular?", a: "Sim, o e-book é em formato PDF e pode ser lido em qualquer dispositivo: celular, tablet ou computador." },
               { q: "Há custo adicional?", a: "Não, o pagamento é único (R$9,90) e você terá acesso vitalício ao material, incluindo futuras atualizações, sem nenhum custo extra." }
