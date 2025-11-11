@@ -49,7 +49,7 @@ export default function Home() {
             100 ideias encantadoras pra decorar com o que você já tem — e leve +50 ideias bônus de presente! ✨
           </p>
           <div className="mt-10 animate-in fade-in slide-in-from-top-4 duration-1000 delay-300">
-            <Link href={CTA_URL} target="_blank" rel="noopener noreferrer">
+            <Link href="#offer">
               <Button size="lg" className="h-14 text-lg px-10">Quero Transformar Minha Casa Neste Natal</Button>
             </Link>
           </div>
@@ -300,7 +300,7 @@ export default function Home() {
             Transforme o simples em especial com ideias que encantam e descubra o poder de um lar cheio de luz, amor e significado.
           </p>
           <div className="mt-10">
-            <Link href={CTA_URL} target="_blank" rel="noopener noreferrer">
+            <Link href="#offer">
               <Button size="lg" className="h-14 text-lg px-10">Quero Começar Agora</Button>
             </Link>
           </div>
