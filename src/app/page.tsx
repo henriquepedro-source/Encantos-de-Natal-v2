@@ -223,43 +223,44 @@ export default function Home() {
       </section>
       
       {/* Offer CTA Section */}
-      <section id="offer" className="w-full py-20 md:py-28 bg-primary text-primary-foreground">
+      <section id="offer" className="w-full py-20 md:py-28 bg-background text-accent-foreground">
         <div className="container max-w-md mx-auto px-4">
-          <div className="relative border-2 border-accent/50 rounded-2xl p-8 bg-primary shadow-[0_0_30px_theme(colors.accent/0.3)]">
+          <div className="relative border-2 border-accent/50 rounded-2xl p-8 bg-accent shadow-[0_0_30px_theme(colors.accent/0.3)]">
             <div className="absolute -top-5 left-1/2 -translate-x-1/2">
-              <div className="bg-accent text-accent-foreground font-bold px-6 py-2 rounded-full text-sm tracking-wider">
+              <div className="bg-primary text-primary-foreground font-bold px-6 py-2 rounded-full text-sm tracking-wider">
                 OFERTA ESPECIAL
               </div>
             </div>
             
             <div className="text-center mt-4">
-               <h2 className="font-bold text-2xl">E-book + Todos os Bônus</h2>
+                <Gift className="w-12 h-12 text-primary mx-auto mb-4" />
+               <h2 className="font-bold text-2xl font-headline">E-book + Bônus Exclusivos</h2>
             </div>
             
             <div className="mt-8 space-y-4 text-lg">
                 {offerItems.map((item, index) => (
-                  <div key={index} className="flex justify-between items-center border-b border-muted/20 pb-2">
+                  <div key={index} className="flex justify-between items-center border-b border-background/20 pb-2">
                     <span>{item.name}</span>
-                    <span className="font-semibold text-muted-foreground line-through">{item.value}</span>
+                    <span className="font-semibold line-through text-background/70">{item.value}</span>
                   </div>
                 ))}
             </div>
 
             <div className="text-center mt-8">
-              <p className="text-muted-foreground text-lg">De <span className="line-through">R$101,00</span></p>
-              <p className="text-6xl font-bold text-accent my-2">R$9,90</p>
-              <p className="text-muted-foreground">À vista no cartão ou Pix</p>
+              <p className="text-background/70 text-lg">De <span className="line-through">R$101,00</span></p>
+              <p className="text-6xl font-bold text-primary my-2">R$9,90</p>
+              <p className="text-background/70">Acesso vitalício em um pagamento único</p>
             </div>
 
             <div className="mt-10">
               <Link href={CTA_URL} target="_blank" rel="noopener noreferrer" className="block">
-                <Button size="lg" className="w-full h-16 text-xl font-bold bg-accent text-accent-foreground transition-all duration-300 hover:shadow-[0_0_20px_theme(colors.accent/0.5)] transform hover:scale-105">
-                  Quero o E-book com os Bônus
+                <Button size="lg" className="w-full h-16 text-xl font-bold bg-primary text-primary-foreground transition-all duration-300 hover:shadow-[0_0_20px_theme(colors.primary/0.5)] transform hover:scale-105">
+                  Quero Garantir Meu E-book Agora
                 </Button>
               </Link>
             </div>
-            <div className="mt-6 flex justify-center items-center gap-2 text-sm text-muted-foreground">
-                <ShieldCheck className="w-4 h-4 text-accent" />
+            <div className="mt-6 flex justify-center items-center gap-2 text-sm text-background/70">
+                <ShieldCheck className="w-4 h-4 text-primary" />
                 <span>Pagamento 100% seguro</span>
             </div>
           </div>
