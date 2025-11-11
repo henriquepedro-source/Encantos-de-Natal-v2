@@ -17,7 +17,6 @@ const CTA_URL = "https://pay.kiwify.com.br/53lpb0Y";
 const getImage = (id: string): ImagePlaceholder | undefined => PlaceHolderImages.find(p => p.id === id);
 
 export default function Home() {
-  const heroImage = getImage('hero-ebook-mockup');
   const connectionImage = getImage('connection-cozy-room');
   const showcaseImage = getImage('product-showcase-mockup');
   const testimonials = [
@@ -142,7 +141,7 @@ export default function Home() {
                   alt={showcaseImage.description}
                   width={400}
                   height={500}
-                  className="rounded-lg shadow-2xl"
+                  className="rounded-lg shadow-2xl object-cover"
                   data-ai-hint={showcaseImage.imageHint}
                 />
               </div>
