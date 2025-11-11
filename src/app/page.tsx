@@ -223,9 +223,9 @@ export default function Home() {
       </section>
       
       {/* Offer CTA Section */}
-      <section id="offer" className="w-full py-20 md:py-28 bg-black text-white">
+      <section id="offer" className="w-full py-20 md:py-28 bg-[hsl(var(--foreground))] text-[hsl(var(--background))]">
         <div className="container max-w-md mx-auto px-4">
-          <div className="relative border-2 border-green-400/50 rounded-2xl p-8 bg-gray-900/30 shadow-[0_0_30px_rgba(34,211,238,0.3)]">
+          <div className="relative border-2 border-green-400/50 rounded-2xl p-8 bg-[hsl(var(--foreground))] shadow-[0_0_30px_rgba(34,211,238,0.3)]">
             <div className="absolute -top-5 left-1/2 -translate-x-1/2">
               <div className="bg-green-500 text-black font-bold px-6 py-2 rounded-full text-sm tracking-wider">
                 OFERTA ESPECIAL
@@ -312,5 +312,3 @@ export default function Home() {
     </div>
   );
 }
-
-    
