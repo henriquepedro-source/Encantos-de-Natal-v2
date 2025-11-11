@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Check, CheckCircle2, HeartHandshake, Sprout, Wallet, Users, Recycle, Sparkles, BookOpen, Gift, ClipboardCheck, Lightbulb, MessageCircle, Star, Leaf, Wrench } from "lucide-react";
+import { Check, CheckCircle2, HeartHandshake, Sprout, Wallet, Users, Recycle, Sparkles, BookOpen, Gift, ClipboardCheck, Lightbulb, MessageCircle, Star, Leaf, Wrench, ShieldCheck } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -18,7 +18,6 @@ const getImage = (id: string): ImagePlaceholder | undefined => PlaceHolderImages
 
 export default function Home() {
   const connectionImage = getImage('connection-cozy-room');
-  const showcaseImage = getImage('product-showcase-mockup');
   const testimonials = [
     { id: 'testimonial-1', name: 'Ana Clara', role: 'Leitora', text: 'Minha casa ficou linda e acolhedora, tudo com o que eu já tinha.', image: getImage('testimonial-1') },
     { id: 'testimonial-2', name: 'Juliana S.', role: 'Leitora', text: 'É incrível como ideias simples podem criar um clima mágico.', image: getImage('testimonial-2') },
@@ -30,6 +29,13 @@ export default function Home() {
     { id: 'transformation-familia', title: 'Na família', description: 'Momentos de conexão e afeto.', image: getImage('transformation-familia') },
     { id: 'transformation-lar', title: 'No lar', description: 'Um clima leve e cheio de boas energias.', image: getImage('transformation-lar') },
   ];
+  const offerItems = [
+      { name: "E-book com +100 ideias", value: "R$ 47,00" },
+      { name: "+50 ideias bônus", value: "R$ 27,00" },
+      { name: "Checklist natalino", value: "R$ 17,00" },
+      { name: "Tutoriais simples e práticos", value: "R$ 37,00" },
+      { name: "Inspirações visuais", value: "R$ 19,00" },
+    ];
 
   return (
     <div className="flex flex-col items-center bg-background text-foreground overflow-x-hidden">
@@ -221,19 +227,45 @@ export default function Home() {
       </section>
       
       {/* Offer CTA Section */}
-      <section id="offer" className="w-full py-20 md:py-28 bg-[#1F3D32] text-primary-foreground">
-        <div className="container max-w-3xl mx-auto px-4 text-center">
-          <p className="text-2xl text-secondary line-through">De R$97</p>
-          <h2 className="font-headline text-5xl md:text-7xl font-bold text-white">por apenas R$9,90!</h2>
-          <p className="mt-4 text-xl md:text-2xl text-secondary">
-            Acesso imediato, ideias bônus inclusas e atualizações gratuitas.
-          </p>
-          <div className="mt-10">
-            <Link href={CTA_URL} target="_blank" rel="noopener noreferrer">
-              <Button size="lg" variant="secondary" className="h-16 text-xl px-12 transform hover:scale-105 transition-transform duration-300">
-                Quero Transformar Minha Casa Agora!
-              </Button>
-            </Link>
+      <section id="offer" className="w-full py-20 md:py-28 bg-black text-white">
+        <div className="container max-w-md mx-auto px-4">
+          <div className="relative border-2 border-green-400/50 rounded-2xl p-8 bg-gray-900/30 shadow-[0_0_30px_rgba(34,211,238,0.3)]">
+            <div className="absolute -top-5 left-1/2 -translate-x-1/2">
+              <div className="bg-green-500 text-black font-bold px-6 py-2 rounded-full text-sm tracking-wider">
+                MELHOR OFERTA
+              </div>
+            </div>
+            
+            <div className="text-center mt-4">
+               <h2 className="font-bold text-2xl">E-book + Todos os Bônus</h2>
+            </div>
+            
+            <div className="mt-8 space-y-4 text-lg">
+                {offerItems.map((item, index) => (
+                  <div key={index} className="flex justify-between items-center border-b border-gray-700 pb-2">
+                    <span>{item.name}</span>
+                    <span className="font-semibold text-gray-400 line-through">{item.value}</span>
+                  </div>
+                ))}
+            </div>
+
+            <div className="text-center mt-8">
+              <p className="text-gray-400 text-lg">De <span className="line-through">R$147,00</span></p>
+              <p className="text-6xl font-bold text-green-400 my-2">R$9,90</p>
+              <p className="text-gray-400">À vista ou em até 12x no cartão</p>
+            </div>
+
+            <div className="mt-10">
+              <Link href={CTA_URL} target="_blank" rel="noopener noreferrer" className="block">
+                <Button size="lg" className="w-full h-16 text-xl font-bold bg-gradient-to-r from-green-400 to-cyan-400 text-black transition-all duration-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.5)] transform hover:scale-105">
+                  Quero o E-book com os Bônus
+                </Button>
+              </Link>
+            </div>
+            <div className="mt-6 flex justify-center items-center gap-2 text-sm text-gray-400">
+                <ShieldCheck className="w-4 h-4 text-green-400" />
+                <span>Pagamento 100% seguro</span>
+            </div>
           </div>
         </div>
       </section>
