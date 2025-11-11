@@ -32,6 +32,8 @@ export default function Home() {
   const offerItems = [
       { name: "E-book com +100 ideias", value: "R$ 47,00" },
       { name: "+50 ideias bônus", value: "R$ 27,00" },
+      { name: "Checklist de Natal (imprimível)", value: "R$ 17,00" },
+      { name: "Acesso vitalício e atualizações", value: "R$ 27,00" },
     ];
 
   return (
@@ -229,7 +231,7 @@ export default function Home() {
           <div className="relative border-2 border-green-400/50 rounded-2xl p-8 bg-gray-900/30 shadow-[0_0_30px_rgba(34,211,238,0.3)]">
             <div className="absolute -top-5 left-1/2 -translate-x-1/2">
               <div className="bg-green-500 text-black font-bold px-6 py-2 rounded-full text-sm tracking-wider">
-                MELHOR OFERTA
+                OFERTA ESPECIAL
               </div>
             </div>
             
@@ -247,7 +249,7 @@ export default function Home() {
             </div>
 
             <div className="text-center mt-8">
-              <p className="text-gray-400 text-lg">De <span className="line-through">R$74,00</span></p>
+              <p className="text-gray-400 text-lg">De <span className="line-through">R$118,00</span></p>
               <p className="text-6xl font-bold text-green-400 my-2">R$9,90</p>
               <p className="text-gray-400">À vista ou em até 12x no cartão</p>
             </div>
@@ -313,3 +315,5 @@ export default function Home() {
     </div>
   );
 }
+
+    
